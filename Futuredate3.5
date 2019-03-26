@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class exercises {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Today is what day? (0 - 6):   ");
+		int today = input.nextInt(); 
+		System.out.println("Which day in future (0-6):  ");
+		int fut  = input.nextInt();
+		int future = (today + fut) % 7;	
+		
+		switch (today) {
+		case 0 : System.out.println("Sunday");
+		break;
+		case 1 : System.out.println("Monday");
+		break;
+		case 2 : System.out.println("Tuesday");
+		break;
+		case 3 : System.out.println("Wednesday");
+		break;
+		case 4 : System.out.println("Thursday");
+		break;
+		case 5 : System.out.println("Friday");
+		break;
+		case 6 : System.out.println("Saturday");
+		}	
+			
+				
+				
+		switch (future) {
+		case 0 : System.out.println("Sunday");
+		break;
+		case 1 : System.out.println("Monday");
+		break;
+		case 2 : System.out.println("Tuesday");
+		break;
+		case 3 : System.out.println("Wednesday");
+		break;
+		case 4 : System.out.println("Thursday");
+		break;
+		case 5 : System.out.println("Friday");
+		break;
+		case 6 : System.out.println("Saturday");
+		//break;
+		
+		System.out.println("Today is:  " + today);
+		System.out.println("Future is:  " + future);
+		
+		
+			
+		}
+		
+	  }
+	}
